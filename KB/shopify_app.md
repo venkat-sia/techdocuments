@@ -19,15 +19,15 @@ Graas – Growth as a Service Shopify app
 ### Graas – Growth as a Service Shopify ap
 - **Connect flow is streamlined**
 	+ Sellers log in to their store (example: https://admin.shopify.com/store/testgraas007/)
-		<img width="950" alt="image" src="https://github.com/venkat-sia/work_day/assets/79962203/b2cca49d-2845-4b82-97b1-9020eafe4641"> 
+		![image](https://github.com/venkat-sia/techdocuments/assets/79962203/98635130-3633-4a9a-8c11-95aabd90fd07) 
  	+ Graas app is in pilot mode and kept as an unlisted app; hence you can't find it under Add apps
 	+ Please install it from  the app's App Store listing page, that is, to open our site  https://apps.shopify.com/graas in the browser
-        <img width="945" alt="image" src="https://github.com/venkat-sia/work_day/assets/79962203/9ce4714e-05d7-4642-9929-2902d83bba43">
-		<img width="956" alt="image" src="https://github.com/venkat-sia/work_day/assets/79962203/f1547660-9ea5-4a65-a1bd-f81b5875773a">
+        ![image](https://github.com/venkat-sia/techdocuments/assets/79962203/c1379563-6480-460a-949a-a67928b8a053)
+		![image](https://github.com/venkat-sia/techdocuments/assets/79962203/28425e2f-de2c-4b97-978b-0835427c190e)
   	+ The user will be redirected to the turbocharger login or sign-up page
-        <img width="956" alt="image" src="https://github.com/venkat-sia/work_day/assets/79962203/1e61910b-9ca5-4689-a1d0-7d4681e4a409">
+        ![image](https://github.com/venkat-sia/techdocuments/assets/79962203/4b50a03e-13a0-4013-a09a-1e01e3c24fa4)
     + If the seller is an existing customer of Turbocharger, then they can log in using their username and password, and the seller will be taken to the Connect page
-        <img width="950" alt="image" src="https://github.com/venkat-sia/work_day/assets/79962203/d23858d7-4d45-455a-92cf-5fab6b0858d3">
+        ![image](https://github.com/venkat-sia/techdocuments/assets/79962203/5ce7e70f-fb14-46cd-a210-4dfaa1cfec67)
 	
     + If the seller is NOT an existing customer of Turbocharger, then they can sign up, and the seller will be taken to the Connect page
 
@@ -40,10 +40,3 @@ Graas – Growth as a Service Shopify app
 	     - enable single data pipeline for tracker
 	     - enhance the app to register the pixel API and auto-install the call-back function to listen to pixel events
  
-          
-         
-		
-	
-
-  
-
