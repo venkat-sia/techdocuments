@@ -37,4 +37,4 @@
 
 ## Product Master (yet to develop)(seller can enter or edit the brand name)
 1. the seller/AM enters the brand name or select the graas brand from the drop-down for the product (seller SKU)
-2. create a new graas brand id or update the existing graas brand id into the product master for the product 
+2. create a new graas brand id or update the existing graas brand id into the product master and inventory for the product 
