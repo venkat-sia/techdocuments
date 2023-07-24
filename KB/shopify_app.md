@@ -40,3 +40,10 @@ Graas – Growth as a Service Shopify app
 	     - enable single data pipeline for tracker
 	     - enhance the app to register the pixel API and auto-install the call-back function to listen to pixel events
  
+       - npm deploy <app name>
+         - javascript function gets injected into the seller's store?
+       - installation connect flow 
+         - any additional scopes ?
+         - any other steps to register the seller to listen pixel api events?
+       - we don't change anything in the app setup
+         - do we need to resubmit for approval

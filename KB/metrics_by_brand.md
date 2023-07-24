@@ -2,9 +2,10 @@
 
 ## Product Listing / Sync (Import Inventory) / Edit Listing
 
-1. if the brand exists in the inventory / product listing, then
-2. **check if there is a graas brand available in brand_mapping (yet to push live)** update the brand id as graas brand id in the product listing and product master
-3. else create new brand in the brand mapping 
+- if a brand name exists in the inventory / product listing and no graasBrandID available, then
+- **check if there is a graasBrandID available in brand_mapping for the brand name(yet to push live)** 
+- if graasBrandID exists in brand_mapping then update the graasBrandID in the inventory and product master
+- else create graasBrandID in the brand mapping 
 ```
 {
     "_id" : ObjectId("6436cc9db71bb17e293dee06"),
@@ -24,17 +25,39 @@
     "timeLastUpdated" : NumberLong(1681313035)
 }
 ```
+- then update the graasBrandID  in the inventory and product master 
+- Note: the graas brand name will be the brand name from the inventory 
 
-4.update the brand id created as graas_brand_id in the inventory and product master 
+## Creating / updating graasBrandID from product master (yet to develop)
+- develop a page in product master add the brand name 
+  - choose from graas brand names 
+  - create a new brand name
+    - **check if there is a graasBrandID available in brand_mapping for the brand name(yet to push live)** 
+    - if graasBrandID exists in brand_mapping then update the graasBrandID in the inventory and product master
+    - else create graasBrandID in the brand mapping 
+    - then update the graasBrandID  in the inventory and product master
 
 
 ## Order Polling (yet to enable the flag in live)
-1. check if the SKU (product master) has the graas brand, if it exists then insert graas brand id into the respective order item
+- check if the SKU (product master) has the graasBrandID 
+  - if it exists then insert graasBrandID into the respective order item
 
 ## Batch Job to populate the orders with GRaaS Brand (yet to develop)
-2. On-demand or a cron job to populate the GRaaS Brand into the order item from product master/ inventory
+- On-demand or a cron job to populate the graasBrandID into the order item from product master/ inventory
 
+## Admin can change the brand name globally for any graasBrandID (yet to develop)
+- develop an admin page hence the super user can change the brand name of a graasBrandID globally
 
-## Product Master (yet to develop)(seller can enter or edit the brand name)
-1. the seller/AM enters the brand name or select the graas brand from the drop-down for the product (seller SKU)
-2. create a new graas brand id or update the existing graas brand id into the product master for the product 
+## Account admin can change the  brand name for a graasBrandID only for their account  (yet to develop)
+- maintain the brand name at the account level which overrides the default one at global TC level
+  ``` 
+     {
+       merhcantID:"AABSO",
+        [ 
+          {
+            graas_brand_id:"",
+            brandName:""
+          }
+        ]
+     }
+  ```
