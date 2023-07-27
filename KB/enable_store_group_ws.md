@@ -1,4 +1,4 @@
-Turbocharger metrics in source and preferred currency (Basic Use Case)
+Turbocharger metrics in store currency and account preferred currency (Basic Use Case)
 ---
 
 **Problem**
