@@ -1,4 +1,4 @@
-TC metrics in source and preferred currency
+TC metrics in source and preferred currency (Basic Use Case)
 ---
 
 **Problem**
@@ -7,8 +7,9 @@ TC metrics in source and preferred currency
 - Seller centre reports the numbers in the store currency
 - AMs want to look at the revenue metrics in store currency
 
-**Prerequisite**
+**Current state**
 - data team is using a third party currency conversion service and do the currency conversion with the currency rates on the day the data created
+- data team maintains the amount fields in the account preferred currency
 
 **Enable currency in the Store Group**
 ---
@@ -37,10 +38,19 @@ TC metrics in source and preferred currency
          3. storefront currency if the storefront currency and the ad channel currency are different
    4. Insights and Recommendations
       1. amount fields in the insights and recommendations are available in account preferred currency
-      2. can the data team make the amount fields available in 
+      2. can the data team make the amount fields available in the following 
          1. account preferred currency
          2. source currency
          3. storefront currency if the storefront currency and the ad channel are different
  
-        
-   
+TC metrics in any currency  (Advanced Use Case)
+---       
+   Option 1 (more accurate) - data layer
+   ---
+   - can cover in data warehouse tables or views 
+   - hence the conversion happens using the rates on the data created time
+
+   Option 2 (near accurate) - application layer
+   ---
+   - after db query 
+   - apply the current days conversion rate on the aggregated values /daily values 

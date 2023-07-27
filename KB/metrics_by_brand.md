@@ -28,9 +28,8 @@
 - then update the graasBrandID  in the inventory and product master 
 - Note: the graas brand name will be the brand name from the inventory 
 
-## Creating / updating graasBrandID through admin for a product (yet to develop)
-- develop a page in the admin to create / edit the graasBrandID for a product (product master)
-- support bulk import
+## Creating / updating graasBrandID from product master (yet to develop)
+- develop a page in product master add the brand name 
   - choose from graas brand names 
   - create a new brand name
     - **check if there is a graasBrandID available in brand_mapping for the brand name(yet to push live)** 
