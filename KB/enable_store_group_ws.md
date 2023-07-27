@@ -47,7 +47,7 @@ TC metrics in any currency/supported currencies  (Advanced Use Case)
 ---       
    Option 1  - data layer
    ---
-   - can we cover data warehouse tables or views ?
+   - can we cover this in data warehouse tables or views ?
           - maintain the list of supported currencies 
           - the pipeline design and transformation does the currency conversions 
    - hence the conversion happens using the rates on the data created time
