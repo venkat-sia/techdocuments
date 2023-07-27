@@ -43,7 +43,7 @@ Turbocharger metrics in source and preferred currency (Basic Use Case)
          2. ad channel's currency 
          3. storefront currency 
  
-TC metrics in any/supported currency  (Advanced Use Case)
+TC metrics in any currency/supported currencies  (Advanced Use Case)
 ---       
    Option 1  - data layer
    ---
