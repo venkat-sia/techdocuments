@@ -54,7 +54,7 @@ Novu Pricing
     - we can reach out to sales@novu.co 
       <img width="912" alt="image" src="https://github.com/venkat-sia/techdocuments/assets/79962203/aff6b371-fcf7-4413-8671-cab8d23a1645">
     - https://www.crunchbase.com/organization/novu-1a6b
-    <img width="559" alt="image" src="https://github.com/venkat-sia/techdocuments/assets/79962203/f662c8fc-ffdf-43ba-90b0-323a1144d783">
+  <img width="559" alt="image" src="https://github.com/venkat-sia/techdocuments/assets/79962203/f662c8fc-ffdf-43ba-90b0-323a1144d783">
 
 How to configure
 ---
