@@ -14,7 +14,7 @@ Novu (this is the open-source notification infrastructure available)
   - https://novu.co/
   - Open-source notification infrastructure
   - User's timezone awareness is another prominent feature
-  - <img width="829" alt="image" src="https://github.com/venkat-sia/techdocuments/assets/79962203/e7a2b307-6e6c-4e1e-abc1-d3647396f90a">
+    <img width="829" alt="image" src="https://github.com/venkat-sia/techdocuments/assets/79962203/e7a2b307-6e6c-4e1e-abc1-d3647396f90a">
 
 
 ## Requirement 1 - Digest Notifications
