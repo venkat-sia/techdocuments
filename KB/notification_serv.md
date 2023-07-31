@@ -32,7 +32,7 @@ Novu (this is the open-source notification infrastructure available)
     - After the user signs up and connects to a store, the system schedules a one-day delay notification for the user to remind him to log in to check the insights and recos
   - https://docs.novu.co/platform/delay/#scheduled-delay
   
-## Requirement 3 - Schedule Delayed Notifications
+## Requirement 3 - Cancel Delayed Notifications
 
   -   The scheduled delay action needs to be cancelled 
     - Example 
