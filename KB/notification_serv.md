@@ -29,24 +29,25 @@ Novu (this is the open-source notification infrastructure available)
 
   - The delay action awaits a specified amount of time before moving on to trigger the following steps of the workflow.
   - Example 
-    - After the user signs up and connects to a store, the system schedules a one-day delay notification for the user to remind him to login to check the insights and recos
+    - After the user signs up and connects to a store, the system schedules a one-day delay notification for the user to remind him to log in to check the insights and recos
   - https://docs.novu.co/platform/delay/#scheduled-delay
   
 ## Requirement 3 - Schedule Delayed Notifications
 
   -   The scheduled delay action needs to be cancelled 
     - Example 
-      - User logs in 2 hours after the signup and connects and checks the workspace ,then it is not required to send the login-reminder 
+      - User logs in 2 hours after the signup and connects and checks the workspace, then it is not required to send the login-reminder 
   -   https://docs.novu.co/api/cancel-triggered-event/
  
 Novu Pricing
 ---
   - Self-hosted 
     - it is an open source 
-    - if we deploy the components in our cloud VMs or ,Kubernetes, then no charge 
+    - if we deploy the components in our cloud VMs, Kubernetes, then no charge 
         <img width="904" alt="image" src="https://github.com/venkat-sia/techdocuments/assets/79962203/0852b227-6a4f-4227-a86d-a59c9979fcfa">
+    - We already hosting and running https://cube.dev/ (DAO layer) in our VMs and Kubernetes and not the cloud version but there are pros and cons
   - Cloud hosted
-    - the services is hosted and maintained in cloud 
+    - the services are hosted and maintained in the cloud 
     - we can reach out to sales@novu.co 
       <img width="912" alt="image" src="https://github.com/venkat-sia/techdocuments/assets/79962203/aff6b371-fcf7-4413-8671-cab8d23a1645">
 
@@ -57,7 +58,7 @@ How to configure
     - gowtham@graas.ai 
     - ajinkya.patil@graas.ai 
   - Please check the workflows configured after login 
-  - here is the api collection to trigger and cancel a notification
+  - here is the API collection to trigger and cancel a notification https://github.com/venkat-sia/techdocuments/blob/main/Postman%20Collections/NOVU.postman_collection.json
   - Instant Notifications screenshots
     ---
     - <img width="951" alt="image" src="https://github.com/venkat-sia/techdocuments/assets/79962203/02d9161a-085e-4c8e-8053-7b5269432cc2">
