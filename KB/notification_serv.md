@@ -3,46 +3,47 @@
 
 Problem
 ---
- - The current inbuilt notification server does not have the following capabilities
+ - The current notification server built-in lacks certain capabilities.
    - digest notifications
-   - schedule a delayed notifications
+   - schedule delayed notifications
    - cancel a triggered notification
- - The inbuilt notification infrastructure has to be regularly maintained and update to match the state of art notification
+ - The inbuilt notification server has to be regularly maintained and updated to match the state of art notification
 
-Novu
+Novu (this is the open-source notification infrastructure available)
 ---
   - https://novu.co/
   - Open-source notification infrastructure
   - User's timezone awareness is another prominent feature
+  - <img width="829" alt="image" src="https://github.com/venkat-sia/techdocuments/assets/79962203/e7a2b307-6e6c-4e1e-abc1-d3647396f90a">
 
 
 ## Requirement 1 - Digest Notifications
 
    - A digest notification is a notification that consolidates information from several notifications into one and delivers that notification to the end user instead of several separate messages.
    - Example 
-     - Order(s) created for the last one hour
-     - Recommendation(s) created for the last one day after we create the recommendations real-time
+     - Order(s) created for the last hour
+     - Recommendation(s) created for the last day after we create the real-time recommendations
    - https://docs.novu.co/guides/how-to-add-digest-to-email-notifications/
 
  ## Requirement 2 - Schedule Delayed Notifications
 
   - The delay action awaits a specified amount of time before moving on to trigger the following steps of the workflow.
   - Example 
-    - After the user signs up and connects a store , the system schedules a one day delay notification for the user to remind him of login to check the insights and recos
+    - After the user signs up and connects to a store, the system schedules a one-day delay notification for the user to remind him to login to check the insights and recos
   - https://docs.novu.co/platform/delay/#scheduled-delay
   
 ## Requirement 3 - Schedule Delayed Notifications
 
-  -   The scheduled delay action needs to cancelled 
+  -   The scheduled delay action needs to be cancelled 
     - Example 
-      - User logs in 2 hours after the signup and connect and checks the workspace ,then it is not required to send the login reminder 
+      - User logs in 2 hours after the signup and connects and checks the workspace ,then it is not required to send the login-reminder 
   -   https://docs.novu.co/api/cancel-triggered-event/
  
 Novu Pricing
 ---
   - Self-hosted 
-    - it is a open source 
-    - if we deploy the components in our cloud vms or kubernetes then no charge 
+    - it is an open source 
+    - if we deploy the components in our cloud VMs or ,Kubernetes, then no charge 
         <img width="904" alt="image" src="https://github.com/venkat-sia/techdocuments/assets/79962203/0852b227-6a4f-4227-a86d-a59c9979fcfa">
   - Cloud hosted
     - the services is hosted and maintained in cloud 
