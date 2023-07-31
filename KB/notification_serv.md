@@ -42,14 +42,19 @@ Novu (this is the open-source notification infrastructure available)
 Novu Pricing
 ---
   - Self-hosted 
-    - it is an open source 
+    - it is an open source https://github.com/novuhq/novu
     - if we deploy the components in our cloud VMs, Kubernetes, then no charge 
         <img width="904" alt="image" src="https://github.com/venkat-sia/techdocuments/assets/79962203/0852b227-6a4f-4227-a86d-a59c9979fcfa">
-    - We already hosting and running https://cube.dev/ (DAO layer) in our VMs and Kubernetes and not the cloud version but there are pros and cons
+    - We already hosting and running https://cube.dev/ (DAO layer) in our VMs and Kubernetes and not the cloud version
+    - We can host the components and upgrade the versions regularly
+    - NOVU suggests us to use the open source version if we have complicated PII security needs
+    <img width="812" alt="image" src="https://github.com/venkat-sia/techdocuments/assets/79962203/1da6fa4f-ac35-45ea-a6b4-ddfb1e465115">
   - Cloud hosted
     - the services are hosted and maintained in the cloud 
     - we can reach out to sales@novu.co 
       <img width="912" alt="image" src="https://github.com/venkat-sia/techdocuments/assets/79962203/aff6b371-fcf7-4413-8671-cab8d23a1645">
+    - https://www.crunchbase.com/organization/novu-1a6b
+      <img width="559" alt="image" src="https://github.com/venkat-sia/techdocuments/assets/79962203/f662c8fc-ffdf-43ba-90b0-323a1144d783">
 
 How to configure
 ---
