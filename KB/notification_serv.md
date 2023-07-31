@@ -48,7 +48,7 @@ Novu Pricing
     - We already hosting and running https://cube.dev/ (DAO layer) in our VMs and Kubernetes and not the cloud version
     - We can host the components and upgrade the versions regularly
     - NOVU suggests us to use the open source version if we have complicated PII security needs
-    <img width="812" alt="image" src="https://github.com/venkat-sia/techdocuments/assets/79962203/1da6fa4f-ac35-45ea-a6b4-ddfb1e465115">
+        <img width="812" alt="image" src="https://github.com/venkat-sia/techdocuments/assets/79962203/1da6fa4f-ac35-45ea-a6b4-ddfb1e465115">
   - Cloud hosted
     - the services are hosted and maintained in the cloud 
     - we can reach out to sales@novu.co 
