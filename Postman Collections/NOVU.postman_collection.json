@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "1cce5a9a-9f3c-4008-9d19-90fede258c9c",
+		"name": "NOVU",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28368927"
+	},
+	"item": [
+		{
+			"name": "Create Subscriber",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "ApiKey 546fcccb40489487f7842b13cd0adc46",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"subscriberId\" :\"Manikandan@graas.ai\",\r\n\"email\" :\"Manikandan@graas.ai\",\r\n \"firstName\" :\"Mani\",\r\n\"lastName\" :\"M\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.novu.co/v1/subscribers",
+					"protocol": "https",
+					"host": [
+						"api",
+						"novu",
+						"co"
+					],
+					"path": [
+						"v1",
+						"subscribers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Trigger Workflow",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "ApiKey 546fcccb40489487f7842b13cd0adc46",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"to\": {\r\n      \"subscriberId\": \"venkat@graas.ai\"\r\n    },\r\n    \"payload\": {\r\n        \"orderId\": \"213436546\",\r\n        \"siteNickNameId\": \"shopee-sg\"\r\n},\r\n    \"name\":\"email-notification-instant\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.novu.co/v1/events/trigger",
+					"protocol": "https",
+					"host": [
+						"api",
+						"novu",
+						"co"
+					],
+					"path": [
+						"v1",
+						"events",
+						"trigger"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cancel Workflow",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "ApiKey 546fcccb40489487f7842b13cd0adc46",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"to\": {\r\n      \"subscriberId\": \"venkat@graas.ai\"\r\n    },\r\n    \"payload\": {\r\n        \"orderId\": \"213436546\",\r\n        \"siteNickNameId\": \"shopee-sg\"\r\n},\r\n    \"name\":\"email-notification-instant\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.novu.co/v1/events/trigger",
+					"protocol": "https",
+					"host": [
+						"api",
+						"novu",
+						"co"
+					],
+					"path": [
+						"v1",
+						"events",
+						"trigger"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
