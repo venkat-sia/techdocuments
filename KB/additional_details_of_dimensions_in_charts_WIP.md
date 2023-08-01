@@ -1,4 +1,4 @@
-Problem
+Problem 1
 ---
  - Current charts can display only one dimension for any metric 
  - additional information about the dimension value is not displayed
@@ -25,5 +25,12 @@ Problem
          -  Pink City ,Jaipur
       - product title, product image to the SKU
       
+Problem 2
+---
+ - display SKU,Title and Image of a product in the ecommerce workspace table
+
+Snowflake Query
+---
+ - the below is the snow flake query to fetch the top 10 skus together with their title and image URL
 
  
