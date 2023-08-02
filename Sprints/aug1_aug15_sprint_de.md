@@ -4,6 +4,15 @@ Facebook and Google Ads Single data pipeline
  - Accounts Migration Support
    - provide the accounts and credentials if they are not in sync with the TC 
 
+graasBrandId persistence 
+---
+ - graasBrandId will be part of the 
+   - orders
+   - inventory
+   - product master
+- this has to be read by data ETL pipelines and available in the SF views 
+- this is required to show the biz deep-dive metrics by brand
+
 Magento Single Data Pipeline
 ---
  - Data Validation QA completion
