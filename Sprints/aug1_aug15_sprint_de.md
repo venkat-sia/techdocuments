@@ -13,6 +13,18 @@ graasBrandId persistence
 - this has to be read by data ETL pipelines and available in the SF views 
 - this is required to show the biz deep-dive metrics by brand
 
+traffic data week /unique visitors 
+----
+ - .sundar will explain
+
+Enable amount fields in Store Currency 
+---
+ - marketing SF views & insights-recos to have the following 
+    - amount fields in store currency 
+    - store currency
+    - amount fields in the marketing channel currency if the ads channel currency is different from store 
+    - ad channel's currency.
+
 Magento Single Data Pipeline
 ---
  - Data Validation QA completion
@@ -26,10 +38,4 @@ Dataware house
    - pipeline implementation
    - can we switch to the new store and traffic query next sprint?
 
-Enable amount fields in Store Currency 
----
- - marketing SF views & insights-recos to have the following 
-    - amount fields in store currency 
-    - store currency
-    - amount fields in the marketing channel currency if the ads channel currency is different from store 
-    - ad channel's currency
+
