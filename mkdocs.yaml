@@ -1,0 +1,7 @@
+site_name: TC Technical Documents
+nav:
+    - GraaS : index.md
+    - Shopify GraaS APP: shopify_app.md
+    - Notification Server: notification_serv.md
+theme:
+  name: readthedocs
