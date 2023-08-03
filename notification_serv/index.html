@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Notification Server - TC Technical Documents</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Notification Server";
+        var mkdocs_page_input_path = "notification_serv.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> TC Technical Documents
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">GraaS</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../shopify_app/">Shopify GraaS APP</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="./">Notification Server</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#problem">Problem</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#novu-this-is-the-open-source-notification-infrastructure-available">Novu (this is the open-source notification infrastructure available)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#requirement-1-digest-notifications">Requirement 1 - Digest Notifications</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#requirement-3-cancel-delayed-notifications">Requirement 3 - Cancel Delayed Notifications</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#novu-pricing">Novu Pricing</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#how-to-configure">How to configure</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">TC Technical Documents</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
+      <li class="breadcrumb-item active">Notification Server</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="notification-server">Notification Server</h1>
+<hr />
+<h2 id="problem">Problem</h2>
+<ul>
+<li>The current notification server built-in lacks certain capabilities.</li>
+<li>digest notifications</li>
+<li>schedule delayed notifications</li>
+<li>cancel a triggered notification</li>
+<li>The inbuilt notification server has to be regularly maintained and updated to match the state of art notification</li>
+</ul>
+<h2 id="novu-this-is-the-open-source-notification-infrastructure-available">Novu (this is the open-source notification infrastructure available)</h2>
+<ul>
+<li>https://novu.co/</li>
+<li>Open-source notification infrastructure</li>
+<li>User's timezone awareness is another prominent feature
+    <img width="829" alt="image" src="https://github.com/venkat-sia/techdocuments/assets/79962203/e7a2b307-6e6c-4e1e-abc1-d3647396f90a"></li>
+</ul>
+<h2 id="requirement-1-digest-notifications">Requirement 1 - Digest Notifications</h2>
+<ul>
+<li>A digest notification is a notification that consolidates information from several notifications into one and delivers that notification to the end user instead of several separate messages.</li>
+<li>Example <ul>
+<li>Order(s) created for the last hour</li>
+<li>Recommendation(s) created for the last day after we create the real-time recommendations</li>
+</ul>
+</li>
+<li>https://docs.novu.co/guides/how-to-add-digest-to-email-notifications/</li>
+</ul>
+<p>## Requirement 2 - Schedule Delayed Notifications</p>
+<ul>
+<li>The delay action awaits a specified amount of time before moving on to trigger the following steps of the workflow.</li>
+<li>Example <ul>
+<li>After the user signs up and connects to a store, the system schedules a one-day delay notification for the user to remind him to log in to check the insights and recos</li>
+</ul>
+</li>
+<li>https://docs.novu.co/platform/delay/#scheduled-delay</li>
+</ul>
+<h2 id="requirement-3-cancel-delayed-notifications">Requirement 3 - Cancel Delayed Notifications</h2>
+<ul>
+<li>The scheduled delay action needs to be cancelled <ul>
+<li>Example </li>
+<li>User logs in 2 hours after the signup and connects and checks the workspace, then it is not required to send the login-reminder </li>
+</ul>
+</li>
+<li>https://docs.novu.co/api/cancel-triggered-event/</li>
+</ul>
+<h2 id="novu-pricing">Novu Pricing</h2>
+<ul>
+<li>Self-hosted <ul>
+<li>it is an open source https://github.com/novuhq/novu</li>
+<li>if we deploy the components in our cloud VMs, Kubernetes, then no charge 
+    <img width="904" alt="image" src="https://github.com/venkat-sia/techdocuments/assets/79962203/0852b227-6a4f-4227-a86d-a59c9979fcfa"></li>
+<li>We already hosting and running https://cube.dev/ (DAO layer) in our VMs and Kubernetes and not the cloud version</li>
+<li>We can host the components and upgrade the versions regularly</li>
+<li>NOVU suggests us to use the open source version if we have complicated PII security needs
+    <img width="812" alt="image" src="https://github.com/venkat-sia/techdocuments/assets/79962203/1da6fa4f-ac35-45ea-a6b4-ddfb1e465115"></li>
+</ul>
+</li>
+<li>Cloud hosted<ul>
+<li>the services are hosted and maintained in the cloud </li>
+<li>we can reach out to sales@novu.co 
+  <img width="912" alt="image" src="https://github.com/venkat-sia/techdocuments/assets/79962203/aff6b371-fcf7-4413-8671-cab8d23a1645"></li>
+<li>https://www.crunchbase.com/organization/novu-1a6b
+<img width="559" alt="image" src="https://github.com/venkat-sia/techdocuments/assets/79962203/f662c8fc-ffdf-43ba-90b0-323a1144d783"></li>
+</ul>
+</li>
+</ul>
+<h2 id="how-to-configure">How to configure</h2>
+<ul>
+<li>https://web.novu.co/workflows</li>
+<li>invited the following team members <ul>
+<li>gowtham@graas.ai </li>
+<li>ajinkya.patil@graas.ai </li>
+</ul>
+</li>
+<li>Please check the workflows configured after login </li>
+<li>here is the API collection to trigger and cancel a notification https://github.com/venkat-sia/techdocuments/blob/main/Postman%20Collections/NOVU.postman_collection.json</li>
+<li>Instant Notifications screenshots
+    ---<ul>
+<li><img width="951" alt="image" src="https://github.com/venkat-sia/techdocuments/assets/79962203/02d9161a-085e-4c8e-8053-7b5269432cc2"></li>
+<li><img width="955" alt="image" src="https://github.com/venkat-sia/techdocuments/assets/79962203/9ca9ed1f-0b75-4870-9bcb-241815c4ee32"></li>
+<li><img alt="image" src="https://github.com/venkat-sia/techdocuments/assets/79962203/2a161be9-70bf-462c-99ba-387cd8a59029" /></li>
+<li><img alt="image" src="https://github.com/venkat-sia/techdocuments/assets/79962203/7a8b7893-4247-4881-8f63-966fcf0f35b1" /></li>
+<li><img alt="image" src="https://github.com/venkat-sia/techdocuments/assets/79962203/ac8bac80-1c99-41c1-aa01-2b74b5e9832d" /></li>
+<li><img width="765" alt="image" src="https://github.com/venkat-sia/techdocuments/assets/79962203/a01937f8-68fb-4101-813d-a2d10922c230"></li>
+</ul>
+</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../shopify_app/" class="btn btn-neutral float-left" title="Shopify GraaS APP"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../shopify_app/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
