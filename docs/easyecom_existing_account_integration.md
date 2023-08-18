@@ -3,7 +3,7 @@ Account Setup
  - Aggregation Account
     - ClientId
     - API Key
- - Aggregation account for GRaaS needs to be created.
+ - **Aggregation account for GRaaS needs to be created.**
 
 Easy Ecom Seller Connect
 ---
@@ -12,7 +12,7 @@ Easy Ecom Seller Connect
   - connect page gets the following
     - user name
     - password 
-	- how to get the channel stores?
+	- **how to get the channel stores?**
 	   - myntra-1
 	   - myntra-2
      - nykaa-1
@@ -22,8 +22,8 @@ Location_key is mandatory (No)
 ---
    - location is a warehouse
    - how to identify the base location; the base location provides orders from all locations
-   - orders API do not need location
-   - inventory API can include all locations flag 
+   - **orders API do not need the location**
+   - **inventory API can include all locations flag**
 
 
 
