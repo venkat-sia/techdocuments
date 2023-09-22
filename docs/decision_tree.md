@@ -1,2 +1,4 @@
-- the decision tree in table
+- the decision tree in the table
   - https://learnsql.com/blog/do-it-in-sql-recursive-tree-traversal/
+- simple view
+   - https://www.cssscript.com/semantic-hierarchy-tree-treeflex/#google_vignette
