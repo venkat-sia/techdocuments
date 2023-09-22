@@ -1,0 +1,2 @@
+- the decision tree in table
+  - https://learnsql.com/blog/do-it-in-sql-recursive-tree-traversal/
