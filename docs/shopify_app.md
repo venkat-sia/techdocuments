@@ -39,11 +39,11 @@ Graas – Growth as a Service Shopify app
 	     - implement the pixel APIs webhooks
        - **Pixel API**
           - npm deploy <app name>
-          - javascript function is part of our GraaS app
-          - when seller installs our app the function gets injected into their ecommerce store 
+          - The javascript function is part of our GraaS app
+          - when seller installs our app the function gets injected into their e-commerce store 
           - do we need to resubmit our app for approval? No not required for patches
-          - all the pixel events get pushed to our webhook api
-          - webhook api pushes the same to data lake
+          - all the pixel events get pushed to our webhook API
+          - Webhook API pushes the same to a data lake
             ![image](https://github.com/venkat-sia/techdocuments/assets/79962203/7e61f3d6-e9de-4032-b971-b3fa53b626fc)
        - **enable single data pipeline for tracker**
      <br/>
